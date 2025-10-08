@@ -33,7 +33,7 @@
 ```bash
 git clone https://github.com/mhmoudjma/Backup_Sender
 cd Backup_Sender
-chmod +x backup_sender.sh
+chmod +x Backup_Sender.sh
 ./backup_sender.sh
 ```
 
