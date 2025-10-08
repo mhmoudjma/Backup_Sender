@@ -28,39 +28,39 @@
   - Directories are tarred before encryption
 
 
-##Installation
+## Installation
 
-'''
+```bash
 git clone https://github.com/mhmoudjma/Backup_Sender
-cd BackupSender
+cd Backup_Sender
 chmod +x backup_sender.sh
 ./backup_sender.sh
-'''
+```
 
-##Configuration
+## Configuration
 
-Create a "token.env" file in the project root :
-'''
+Create a `token.env` file in the project root :
+```
 BOT_TOKEN="123456789:XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 CHAT_ID="123456789"
-'''
+```
 
 The script expects token.env in the same directory and will exit with an error if it is missing or incomplete.
 
 
-##Requirements
+## Requirements
 
-•bash (POSIX-compatible shell)
+•**bash** (POSIX-compatible shell)
 
-•gpg (for GPG symmetric encryption)
+•**gpg** (for GPG symmetric encryption)
 
-•openssl (for AES-GCM / AES-CBC)
+•**openssl** (for AES-GCM / AES-CBC)
 
-•curl (to call Telegram API)
+•**curl** (to call Telegram API)
 
-•socat (optional — required only if you want the temporary tunnel feature)
+•**socat**(optional — required only if you want the temporary tunnel feature)
 
-•figlet (optional — for ASCII heading)
+•**figlet** (optional — for ASCII heading)
 
 If some tools are missing, the script falls back to sensible behavior where possible (for example it will still use openssl if gpg is unavailable, depending on user choice).
 
@@ -70,3 +70,8 @@ If some tools are missing, the script falls back to sensible behavior where poss
 Behind every `tar` and `curl` command lies a small question: how do we make security a habit, not a burden?
 
 
+## License
+
+This project is licensed under the **GNU General Public License v3.0 (GPLv3)** — see the [LICENSE](LICENSE) file for details.  
+
+The GPLv3 license ensures that this software and any derivatives remain free and open source. You are free to use, modify, and distribute it under the same license terms, but you must include attribution and keep the same licensing for derivative works.
